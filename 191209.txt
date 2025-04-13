@@ -1,0 +1,12 @@
+"Ime: Sofija Prezime: Taseva Indeks: 191209 komadi i opis:
+git init       			# Иницијализација на локален репо
+git remote add origin ...      # Поврзување со GitHub
+git checkout -b branch-name    # Креирање/префрлање гранка
+git add .                      # Додавање фајлови
+git commit -m "..."            # Комит пораки
+git push origin branch-name    # Пуш во remote
+git fetch origin               # Повлекување гранки
+git merge branch-name          # Спојување со master
+git log --oneline --graph --all # Генерирање граф
+...
+" 

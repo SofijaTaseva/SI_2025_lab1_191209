@@ -1,0 +1,18 @@
+*   25a519e Resolve merge conflicts and finalize task methods
+|\  
+| * fbff458 Implement countTasksPercategory method
+* |   252153e Merge pull request #10 from SofijaTaseva/1-remove-a-task-by-name
+|\ \  
+* \ \   357635d Merge pull request #12 from SofijaTaseva/7-count-tasks-per-category
+|\ \ \  
+| |_|/  
+|/| |   
+| * | f70e52e Implement countTasksPerCategory method
+|/ /  
+| | * 92795be Implement countTasksPerCategory method
+| |/  
+| * 385a1de Implement filterByCategory method
+| * 1755a87 Implement removeTask method in TaskManager
+|/  
+* 62ba3ef Add starter code
+* b275017 Initial commit
