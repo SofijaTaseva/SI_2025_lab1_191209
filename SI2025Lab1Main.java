@@ -64,7 +64,17 @@ class TaskManager {
 
     // 1. Remove a task by name
     public void removeTask(String name) {
-        // TODO: Implement removal logic
+                // TODO: Implement removal logic
+                Iterator<Task> iterator = tasks.iterator();
+                while (iterator.hasNext()) {
+                    Task task = iterator.next();
+                    if (task.getName().equalsIgnoreCase(name)) {
+                        iterator.remove();
+                        System.out.println("Task '" + name + "' removed.");
+                        return;
+                    }
+                }
+                System.out.println("Task '" + name + "' not found.");
     }
 
     // 2. Find all completed tasks
@@ -85,7 +95,13 @@ class TaskManager {
 
     // 5. Filter tasks by category
     public List<Task> filterByCategory(String category) {
-        // TODO: Implement filtering logic
+                // TODO: Implement filtering logic
+                List<Task> filtered = new ArrayList<>();
+                for (Task task : tasks) {
+                    if (task.getCategory().equalsIgnoreCase(category)) {
+                        filtered.add(task);
+                    }
+                }
         return new ArrayList<>();
     }
 
@@ -97,7 +113,11 @@ class TaskManager {
 
     // 7. Count tasks per category
     public Map<String, Integer> countTasksPerCategory() {
-        // TODO: Implement counting logic
+        Map<String, Integer> counts = new HashMap<>();
+        for (Task task : tasks) {
+            counts.put(task.getCategory(),
+                counts.getOrDefault(task.getCategory(), 0) + 1);
+        }
         return new HashMap<>();
     }
 
